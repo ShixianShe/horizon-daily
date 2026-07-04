@@ -5,216 +5,194 @@ date: 2026-07-04
 lang: zh
 ---
 
-> 从 47 条内容中筛选出 9 条重要资讯。
+> 从 47 条内容中筛选出 8 条重要资讯。
 
 ---
 
-1. [欧洲议会间谍调查成员遭 Pegasus 入侵](#item-1) ⭐️ 9.0/10
-2. [CDD 方法仅通过 logits 即可恢复微调数据中的逐字内容](#item-2) ⭐️ 9.0/10
-3. [NASA 发射 LINK 航天器救援老化雨燕望远镜](#item-3) ⭐️ 9.0/10
-4. [腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos](#item-4) ⭐️ 9.0/10
-5. [SearXNG：免费隐私保护元搜索引擎](#item-5) ⭐️ 8.0/10
-6. [开源 AI 差距图收录 421 个产品](#item-6) ⭐️ 8.0/10
-7. [Anthropic 指控阿里巴巴大规模蒸馏攻击 Claude](#item-7) ⭐️ 8.0/10
-8. [Claude Fable 5 重新上线：配额缩水与安全误判引开发者不满](#item-8) ⭐️ 8.0/10
-9. [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](#item-9) ⭐️ 8.0/10
+1. [Anthropic 指控阿里巴巴发动大规模蒸馏攻击](#item-1) ⭐️ 9.0/10
+2. [腾讯阿图因 AI 在 CyberGym 安全基准测试中超越 Mythos](#item-2) ⭐️ 9.0/10
+3. [欧洲议会成员遭飞马间谍软件入侵](#item-3) ⭐️ 8.0/10
+4. [Wordgard：ProseMirror 创建者推出的新富文本编辑器](#item-4) ⭐️ 8.0/10
+5. [Current AI 发布开源 AI 差距地图](#item-5) ⭐️ 8.0/10
+6. [CDD 仅从 logits 恢复微调数据原文](#item-6) ⭐️ 8.0/10
+7. [华为发布搭载昇腾 950PR 的 Atlas 350 加速卡](#item-7) ⭐️ 8.0/10
+8. [中国拟新规：半年不活跃账号可注销，AI 内容须标识](#item-8) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [欧洲议会间谍调查成员遭 Pegasus 入侵](https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/) ⭐️ 9.0/10
+## [Anthropic 指控阿里巴巴发动大规模蒸馏攻击](https://t.me/zaihuapd/42327) ⭐️ 9.0/10
 
-2026 年 5 月，公民实验室披露，欧洲议会调查间谍软件委员会的某位成员在 2022 年和 2023 年多次感染了 Pegasus 间谍软件。 此次针对高级调查员的攻击凸显了国家支持监控对民主机构的威胁，可能推动欧盟加强对间谍软件的监管。 2022 年 10 月 21 日的首次感染与一项针对俄罗斯和白俄罗斯记者的活动重叠，表明某个拥有欧洲多国授权的 Pegasus 客户是幕后黑手。
+Anthropic 致信美国参议院银行委员会，指控阿里巴巴通过近 2.5 万个欺诈账户，在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 进行了超过 2880 万次交互，非法提取模型能力。 这据称是迄今已知最大规模的蒸馏攻击，引发了关于 AI 知识产权盗窃和国家安全的严重担忧。可能加剧中美 AI 公司的紧张关系，并促使政府对模型保护实施更严格的监管。 攻击涉及创建 2.5 万个账户来频繁查询 Claude，提取输出以训练阿里巴巴的 Qwen 模型。Anthropic 估计此类攻击成本达数百万美元，并已实施检测措施。
 
-hackernews · ledoge · 7月3日 20:38 · [社区讨论](https://news.ycombinator.com/item?id=48779683)
+telegram · zaihuapd · 7月3日 06:21
 
-**背景**: Pegasus 是由以色列公司 NSO 集团开发的间谍软件，能够远程零点击监控智能手机。政府曾利用它来针对记者、活动人士和异见人士。欧洲议会成立了专门委员会调查 Pegasus 等间谍软件在各成员国的使用情况。
+**背景**: 模型蒸馏是一种合法的机器学习技术，较小的‘学生’模型从较大的‘教师’模型输出中学习。然而，未经许可使用它来提取专有能力被视为蒸馏攻击。Anthropic 此前已识别出 DeepSeek、Moonshot AI 和 MiniMax 的类似攻击，表明 AI 安全面临更广泛的挑战。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Pegasus_(spyware)">Pegasus (spyware)</a></li>
-<li><a href="https://en.wikipedia.org/wiki/NSO_Group">NSO Group</a></li>
+<li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks \ Anthropic</a></li>
+<li><a href="https://www.iaps.ai/research/ai-distillation-attacks-the-case-for-targeted-government-intervention">AI Distillation Attacks: The Case for Targeted Government Intervention</a></li>
+<li><a href="https://rits.shanghai.nyu.edu/ai/anthropic-exposes-industrial-scale-distillation-attacks-by-deepseek-moonshot-and-minimax/">Anthropic Exposes Industrial-Scale Distillation Attacks by DeepSeek ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者指出希腊有滥用 Pegasus 的历史，暗示希腊当局可能参与其中。还有人批评欧洲议会缺乏工作与个人设备分离的政策，并指出某些欧盟国家因滥用 Pegasus 已被 NSO 集团制裁。
-
-**标签**: `#spyware`, `#Pegasus`, `#cybersecurity`, `#European Parliament`, `#espionage`
+**标签**: `#AI security`, `#model distillation`, `#Anthropic`, `#Alibaba`, `#intellectual property`
 
 ---
 
 <a id="item-2"></a>
-## [CDD 方法仅通过 logits 即可恢复微调数据中的逐字内容](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 9.0/10
+## [腾讯阿图因 AI 在 CyberGym 安全基准测试中超越 Mythos](https://mp.weixin.qq.com/s/BzU7g-2iG7d6h4ViwMhxyg) ⭐️ 9.0/10
 
-对比解码差异(CDD)是一种灰盒方法，通过对比基础模型和微调模型的 logits 来恢复大型语言模型中的逐字微调数据，无需权重访问、激活或探测语料。在 SDF 基准测试中，CDD 在四个模型家族的 20 个模型对中的 19 个上实现了 4+/5 的逐字恢复分数，优于白盒的激活差异透镜(ADL)，后者从未超过 3/5。 这是模型差异分析和隐私审计领域的一大进步，因为它表明只需最少的访问权限（仅 logits）即可提取逐字训练数据。这引发了针对微调模型的重要安全与隐私担忧，尤其是那些在敏感或专有数据上训练的模型。 CDD 使用单个默认配置，无需逐模型校准或层选择，成功从八个不同的微调领域恢复逐字文本。一个意外的发现是，虚构人物'Elena Rodriguez 博士'出现在语义无关的微调领域中，这追溯到 Claude Sonnet 3.5 在生成合成数据时的偏差。
+腾讯玄武实验室宣布，其研发的阿图因 AI 在 CyberGym 网络安全基准测试中获得 84.0%的得分，超过了 Anthropic 的 Claude Mythos Preview。该工具基于开源模型 GLM-5.1，消耗的预算不到 Mythos'玻璃翼计划'的 0.1%。 这表明开源、可本地部署的 AI 在漏洞发现方面能够以极低的成本超越领先的专有模型。它还凸显了 AI 驱动网络安全领域的重大进展，可能使企业安全测试更加普及。 阿图因在 curl、gnark、OpenSSL、Python cryptography 和 Java bc-java 等重要开源项目中发现了多个高危逻辑漏洞，评分最高达 9.3。在伯克利 BVI 真实世界漏洞榜单中，阿图因在严重程度排名第一，总数排名第五。
 
-reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
+telegram · zaihuapd · 7月3日 16:12
 
-**背景**: 模型差异分析是比较基础模型与其微调版本的过程，以了解微调期间发生的变化。之前的方法如激活差异透镜(ADL)需要完整的权重访问，且只能恢复模糊的领域级描述。对比解码(CD)是一种最初用于通过对比强模型和弱模型的概率来改善文本生成的技术，CDD 将其改编用于模型比较。
+**背景**: CyberGym 是加州大学伯克利分校开发的大规模网络安全评估框架，测试 AI agent 在来自 188 个软件项目的 1507 个真实世界漏洞上的表现。Claude Mythos 是 Anthropic 未公开发布的安全 AI 模型，以其发现软件漏洞的能力而闻名，公开版本为 Claude Fable 5。GLM-5.1 是一个开源模型，针对 agent 工作流和长时间推理任务进行了优化。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.geeksforgeeks.org/nlp/contrastive-decoding-in-natural-language-processing/">Contrastive Decoding in Natural Language Processing - GeeksforGeeks</a></li>
-<li><a href="https://transformer-circuits.pub/2024/model-diffing/index.html">Stage-Wise Model Diffing</a></li>
+<li><a href="https://arxiv.org/abs/2506.02548">[2506.02548] CyberGym: Evaluating AI Agents' Real-World ... CyberGym Benchmark 2026: 9 model averages | BenchLM.ai CyberGym Leaderboard - llm-stats.com GitHub - sunblaze-ucb/cybergym: CyberGym is a large-scale ... Defense at AI speed: Microsoft’s new multi-model agentic ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mythos_(model)">Mythos (model)</a></li>
+<li><a href="https://huggingface.co/zai-org/GLM-5.1">zai-org/GLM-5.1 · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**标签**: `#model-diffing`, `#LLM-security`, `#privacy`, `#interpretability`, `#fine-tuning`
+**标签**: `#AI`, `#cybersecurity`, `#vulnerability discovery`, `#benchmark`, `#open-source`
 
 ---
 
 <a id="item-3"></a>
-## [NASA 发射 LINK 航天器救援老化雨燕望远镜](https://apnews.com/article/swift-nasa-satellite-rescue-katalyst-a7ddd740ca099587c58865f583c7245a) ⭐️ 9.0/10
+## [欧洲议会成员遭飞马间谍软件入侵](https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/) ⭐️ 8.0/10
 
-2026 年 7 月 3 日，NASA 发射了由 Katalyst Space 建造的 LINK 航天器，旨在与尼尔·格雷尔斯雨燕天文台交会并捕获它，将其轨道抬高以防止失控再入。这是私人航天器首次尝试对接并服务一颗未设计为在轨服务的美国政府卫星。 这项任务可以延长一台关键天体物理观测台的寿命，该观测台已在伽马射线暴研究中带来革命性突破超过 20 年。若成功，将证明商业卫星服务的可行性，为未来太空可持续性方面的公私合作伙伴关系铺平道路。 LINK 将使用机械臂固定望远镜，然后通过推进器将其轨道抬升约 240 公里。由于太阳活动增加，雨燕望远镜的轨道不断衰减，若不干预，最早可能在 2026 年 10 月坠入大气层。
+公民实验室发现，一位欧洲议会调查间谍软件委员会的成员在 2022 年 10 月和 2023 年 3 月遭到以色列 NSO 集团的飞马间谍软件入侵，并将此次攻击与针对欧洲流亡记者和活动人士的监控活动联系起来。 此次入侵直接暴露了国家支持的间谍软件对欧盟民主机构的威胁，加剧了对跨境监控以及商业监控工具被滥用于针对民选官员的担忧。 2022 年 10 月 21 日的首次感染与已知针对俄语和白俄罗斯语流亡者的飞马间谍软件活动重叠，表明某飞马客户有权在多个欧盟国家内操作。受害者手机中同时包含个人医疗信息和机密政府文件。
 
-telegram · zaihuapd · 7月3日 15:43
+hackernews · ledoge · 7月3日 20:38 · [社区讨论](https://news.ycombinator.com/item?id=48779683)
 
-**背景**: 尼尔·格雷尔斯雨燕天文台于 2004 年发射，是一台多波段太空观测台，旨在研究伽马射线暴和其他天体物理暂现源。它原计划运行两年，但已持续工作超过 20 年。近期，太阳活动增强导致大气阻力使轨道降低，威胁其持续运行并可能失控再入。
+**背景**: 飞马（Pegasus）是由以色列 NSO 集团开发的间谍软件，能够通过零点击漏洞远程提取移动设备中的数据。尽管其被宣称用于预防犯罪和恐怖主义，但各国政府广泛利用它监控记者、活动人士和政治对手。此前报告已将飞马与希腊及其他欧盟国家的政客监控事件联系起来。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/LINK_spacecraft">LINK spacecraft</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Neil_Gehrels_Swift_Observatory">Neil Gehrels Swift Observatory - Wikipedia</a></li>
-<li><a href="https://www.nasa.gov/image-article/link-spacecraft-set-for-mission-to-boost-nasas-swift-observatory/">LINK Spacecraft Set for Mission to Boost NASA’s Swift Observatory - NASA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pegasus_(spyware)">Pegasus (spyware)</a></li>
+<li><a href="https://www.kaspersky.com/blog/pegasus-spyware/14604/">Pegasus : The ultimate spyware for iOS and... | Kaspersky official blog</a></li>
 
 </ul>
 </details>
 
-**标签**: `#NASA`, `#private space`, `#satellite servicing`, `#Swift telescope`, `#space rescue`
+**社区讨论**: 评论者指出，飞马已知被希腊和波兰等欧洲政府使用，一些人提到以色列公司已因滥用而与某些国家切断联系。有用户还质疑为何欧洲议会不将工作设备和个人设备分离以保护敏感信息。
+
+**标签**: `#spyware`, `#Pegasus`, `#European Parliament`, `#cybersecurity`, `#surveillance`
 
 ---
 
 <a id="item-4"></a>
-## [腾讯阿图因 AI 在 CyberGym 测试中超越 Mythos](https://mp.weixin.qq.com/s/BzU7g-2iG7d6h4ViwMhxyg) ⭐️ 9.0/10
+## [Wordgard：ProseMirror 创建者推出的新富文本编辑器](https://wordgard.net/) ⭐️ 8.0/10
 
-腾讯玄武实验室的阿图因 AI 在加州大学伯克利分校主导的 CyberGym 网络安全基准测试中获得 84.0%的得分，超越 Anthropic 的 Claude Mythos Preview，而消耗的预算不到 Mythos“玻璃翼计划”的 0.1%。 这表明开源模型能以极低的成本在真实世界网络安全任务中超越领先的闭源模型，有望推动 AI 驱动的漏洞发现普惠化，并对 AI 安全领域产生深远影响。 阿图因 AI 基于开源模型 GLM-5.1 构建，在 curl、gnark、OpenSSL、Python cryptography、Java bc-java 等项目中发现了多个 Mythos 未检出的高危逻辑漏洞（最高 CVSS 评分 9.3），并在伯克利 BVI 真实世界漏洞榜单中严重程度排名第 1。
+Wordgard 是一款由 ProseMirror 创建者 Marijn Haverbeke 发布的新浏览器端富文本编辑器，旨在解决现有富文本编辑解决方案的局限性。 此次发布意义重大，因为 ProseMirror 是一个广泛使用的库；其创建者推出的新编辑器可能会影响 Web 开发生态。它可能为特定用例提供更简单的 API 或更好的性能。 Wordgard 与 ProseMirror 共享许多概念，但并非升级路径；迁移需要大量重写。该编辑器从头设计，以解决 ProseMirror 未解决的问题。
 
-telegram · zaihuapd · 7月3日 16:12
+hackernews · indy · 7月3日 08:50 · [社区讨论](https://news.ycombinator.com/item?id=48772573)
 
-**背景**: CyberGym 是加州大学伯克利分校推出的大规模基准测试，包含 188 个开源项目的 1507 个真实漏洞，用于评估 AI 智能体在漏洞分析方面的能力。GLM-5.1 是 Z.AI 的最新一代旗舰模型，针对智能体编程和长周期任务进行了优化。玻璃翼计划是 Anthropic 联合科技巨头发起的项目，使用 Claude Mythos Preview 主动修复全球软件漏洞。
+**背景**: ProseMirror 是一个面向 JavaScript 的开源富文本编辑器库，以其可定制的文档模型和协同编辑支持而闻名。它基于 contentEditable，但提供了结构化的方法。Wordgard 是同一作者的新项目，旨在克服 ProseMirror 的一些架构挑战。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/sunblaze-ucb/cybergym">GitHub - sunblaze-ucb/cybergym: CyberGym is a large-scale, high-quality cybersecurity evaluation framework designed to rigorously assess the capabilities of AI agents on real-world vulnerability analysis tasks. · GitHub</a></li>
-<li><a href="https://docs.z.ai/guides/llm/glm-5.1">GLM - 5 . 1 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
-<li><a href="https://news.qq.com/rain/a/20260409A02TZ100">Anthropic神话模型发布，但不让你用_腾讯新闻</a></li>
+<li><a href="https://prosemirror.net/">ProseMirror</a></li>
+<li><a href="https://prosemirror.net/docs/">ProseMirror Docs</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI安全`, `#漏洞检测`, `#网络安全`, `#开源模型`, `#腾讯`
+**社区讨论**: 社区评论反应不一：一位用户报告 iPhone 自动更正输入被编辑器吞掉，而其他人则称赞设计，认为系统指南很有验证价值。大家对与 ProseMirror 的差异以及迁移所需的工作量感到好奇。
+
+**标签**: `#rich-text-editor`, `#prosemirror`, `#javascript`, `#web-development`
 
 ---
 
 <a id="item-5"></a>
-## [SearXNG：免费隐私保护元搜索引擎](https://github.com/searxng/searxng) ⭐️ 8.0/10
+## [Current AI 发布开源 AI 差距地图](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
 
-SearXNG 是一个免费的开源元搜索引擎，能够聚合多达 280 个搜索服务的结果，同时保护用户隐私。 对于注重隐私的用户和为本地 AI 模型提供搜索能力来说，它是一个关键工具，减少了对中心化搜索引擎的依赖。 SearXNG 是已停止维护的 SearX 的一个分支，不跟踪或分析用户；它还支持 JSON 输出以便与其他应用集成。
-
-hackernews · theanonymousone · 7月3日 20:15 · [社区讨论](https://news.ycombinator.com/item?id=48779454)
-
-**背景**: 元搜索引擎（或搜索聚合器）同时查询多个搜索引擎，并将它们的结果合并成一个列表。这种方法分散了查询负载，并能增强隐私，因为没有一个搜索引擎能看到完整的用户查询模式。SearXNG 是最受欢迎的自托管元搜索引擎之一，由超过 70 个服务商免费提供。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Metasearch_engine">Metasearch engine</a></li>
-<li><a href="https://en.wikipedia.org/wiki/SearXNG">SearXNG</a></li>
-<li><a href="https://docs.searxng.org/">SearXNG Documentation (2026.7.3+21773bbb2)</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: SearX 的原作者宣布了一个新项目 Hister，一个全文索引器。用户分享了经验：有人多年来每天使用 SearXNG 搭配 YaCY 后端，认为虽然较慢但足够好，同时提到在抓取时会遇到验证码问题。还有人强调它通过提供优化的上下文对本地 AI 代理很有用。
-
-**标签**: `#metasearch`, `#privacy`, `#open-source`, `#search engine`
-
----
-
-<a id="item-6"></a>
-## [开源 AI 差距图收录 421 个产品](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
-
-Current AI（一个全球非营利合作伙伴关系）发布了开源 AI 差距图 v0.1 版，收录了来自 228 个组织的 421 个开源 AI 产品，包括 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目。 这张全面的地图提供了开源 AI 生态系统的结构化概览，帮助开发者、研究人员和政策制定者识别差距和机会。它是促进协作和加速开源 AI 创新的重要资源。 该地图将产品分为三个堆栈层的 14 个类别：模型组件、产品/用户体验和基础设施。所有底层数据均以 MIT 许可证发布在 GitHub 上，包括 1,184 个 YAML 文件和用于可复现性的脚本。
+Current AI（一个在 2025 年 2 月巴黎 AI 行动峰会上成立、已获 4 亿美元承诺的非营利组织）发布了开源 AI 差距地图 v0.1，该地图索引了开源 AI 生态系统中的 421 个产品，涵盖软件、模型、数据集和硬件。 这一地理图绘制计划为开源 AI 领域提供了前所未有的可见性，有助于识别投资与开发中的空白和机遇，在政府和组织推动透明、可访问的 AI 基础设施的背景下尤为重要。 该地图包含来自 228 个组织的 266 个软件工具和库、85 个模型、50 个数据集和 20 个硬件项目，底层数据以 MIT 许可证发布在 GitHub 上，包括 1,184 个 YAML 文件及相关脚本。
 
 rss · Simon Willison · 7月3日 22:04
 
-**背景**: Current AI 是一个全球公私合作伙伴关系，于 2025 年 2 月在巴黎的人工智能行动峰会上启动，获得了来自政府、慈善机构和包括 Google、Salesforce 在内的科技公司承诺的 4 亿美元资金。其使命是通过支持开源 AI 项目来构建“AI 的公共选择”。差距图 v0.1 是一个动态索引，旨在跟踪和可视化整个开源 AI 生态系统。
+**背景**: 开源 AI 指的是公开可用、可修改和分发的人工智能模型、工具和数据集。然而，生态系统碎片化且难以导航。差距地图旨在系统地编录这些资源，提供结构化概览，帮助利益相关者了解当前状况并识别缺乏开源选项的领域。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://www.currentai.org/blogs/introducing-the-gap-map-v0-1">Introducing the Gap Map v0.1</a></li>
 <li><a href="https://simonwillison.net/2026/jul/3/open-source-ai-gap-map/">Open Source AI Gap Map | Simon Willison’s Weblog</a></li>
-<li><a href="https://philanthropynewsdigest.org/news/france-funders-launch-400-million-public-interest-ai-initiative">France, funders launch $400 million public interest AI initiative | Philanthropy news | PND</a></li>
 
 </ul>
 </details>
 
-**标签**: `#open source`, `#AI`, `#ecosystem`, `#mapping`, `#tools`
+**标签**: `#open source`, `#AI`, `#ecosystem mapping`, `#non-profit`, `#infrastructure`
+
+---
+
+<a id="item-6"></a>
+## [CDD 仅从 logits 恢复微调数据原文](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
+
+研究人员提出了对比解码差异法（CDD），这是一种仅利用 logits 差异即可从微调大语言模型中恢复逐字训练数据的灰盒方法，无需访问权重或激活值。在 SDF 基准测试中，CDD 在四个模型系列（1B 至 32B 参数）的 20 对模型中 19 对达到 4+/5 的逐字恢复分数，而白盒方法激活差异透镜（ADL）最高仅为 3/5。 CDD 大幅降低了提取敏感微调数据的门槛，引发了依赖专有数据或合成数据的模型构建者在隐私和知识产权方面的担忧。同时，它为模型审计和安全研究提供了强大工具，无需完全访问模型即可验证微调内容。 CDD 使用单一的默认配置，无需针对每个模型进行校准或层选择，速度比先前方法快 170 倍。一个意外发现是，虚构角色'Dr. Elena Rodriguez'在多个语义无关的微调领域中反复出现，经追溯发现源于 Claude Sonnet 3.6 在生成合成科学家名称时的偏好。
+
+reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
+
+**背景**: 模型差异分析是指比较基础模型及其微调版本以了解微调改变了哪些内容的技术。Logits 是神经网络中 softmax 之前的原始输出分数，反映了模型对每个 token 的置信度。先前方法如激活差异透镜（ADL）需要白盒访问（权重和激活值）且只能恢复模糊的领域描述，而 CDD 只需灰盒访问（仅 logits）即可提取逐字文本。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://tools4all.ai/trends/contrastive-decoding-diffing-recovers-verbatim-finetuning-data">Contrastive Decoding Diffing Recovers Verbatim Finetuning ...</a></li>
+<li><a href="https://arxiv.org/html/2510.13900v2">Narrow Finetuning Leaves Clearly Readable Traces in Activation ...</a></li>
+<li><a href="https://www.emergentmind.com/papers/2605.25902">CDD: Verbatim Content Recovery via Diffing</a></li>
+
+</ul>
+</details>
+
+**标签**: `#machine learning`, `#interpretability`, `#model safety`, `#fine-tuning`, `#security`
 
 ---
 
 <a id="item-7"></a>
-## [Anthropic 指控阿里巴巴大规模蒸馏攻击 Claude](https://t.me/zaihuapd/42327) ⭐️ 8.0/10
+## [华为发布搭载昇腾 950PR 的 Atlas 350 加速卡](https://t.me/zaihuapd/42329) ⭐️ 8.0/10
 
-Anthropic 指控阿里巴巴通过约 2.5 万个欺诈账户，在 2026 年 4 月 22 日至 6 月 5 日期间与 Claude 进行了超过 2880 万次交互，实施大规模“蒸馏攻击”以窃取其 AI 能力。 该事件是针对前沿 AI 模型已知最大规模的蒸馏攻击，凸显了 AI 行业日益严重的知识产权盗窃问题，并加剧了中美 AI 竞争。 Anthropic 声称该攻击由阿里巴巴及其 Qwen AI 实验室实施，并已与其他 AI 实验室和当局共享技术指标以防止类似攻击。
+华为在 2026 年华为中国合作伙伴大会上正式发布搭载全新昇腾 950PR 处理器的 AI 训练推理加速卡 Atlas 350，宣称其单卡算力达到英伟达 H20 的 2.87 倍。 此次发布大幅缩小了与英伟达在 AI 加速卡市场的差距，提供了性能更强、成本更低的国产替代方案，可能重塑国内 AI 芯片竞争格局。 Atlas 350 支持 FP4 低精度推理，是国内唯一具备此能力的加速卡，并可在单卡上加载 70B 参数模型，配备 112 GB HBM 内存，在向量算力和互联带宽方面大幅提升。
 
-telegram · zaihuapd · 7月3日 06:21
+telegram · zaihuapd · 7月3日 08:35
 
-**背景**: 模型蒸馏是一种技术，较弱模型通过学习较强模型的输出来复制其能力，通常用于合法目的，但也用于未经授权的复制。Anthropic 已构建检测系统来识别蒸馏攻击，包括行为指纹识别和跨账户的协调活动检测。
+**背景**: FP4（4 位浮点数）是一种超低精度格式，将每个参数压缩到 4 位，减少内存占用并加速推理，同时保持浮点非线性特性。昇腾 950PR 芯片于 2026 年 3 月实现规模量产，定价 7 万元，与英伟达高端产品竞争。此举契合中国在出口限制下推动 AI 硬件自主可控的战略。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks">Detecting and preventing distillation attacks \ Anthropic</a></li>
-<li><a href="https://www.iaps.ai/research/ai-distillation-attacks-the-case-for-targeted-government-intervention">AI Distillation Attacks: The Case for Targeted Government Intervention — Institute for AI Policy and Strategy</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/2026893491125467122">华为昇腾950PR正式量产！7万定价打穿英伟达，国产AI芯片终于站起来了</a></li>
+<li><a href="https://baike.baidu.com/item/昇腾950PR芯片/66772899">昇腾950PR芯片_百度百科</a></li>
+<li><a href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/">Introducing NVFP4 for Efficient and Accurate Low-Precision Inference | NVIDIA Technical Blog</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Model Theft`, `#Anthropic`, `#Alibaba`, `#AI Safety`
+**标签**: `#华为`, `#AI加速卡`, `#昇腾`, `#硬件发布`, `#国产芯片`
 
 ---
 
 <a id="item-8"></a>
-## [Claude Fable 5 重新上线：配额缩水与安全误判引开发者不满](https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-relaunch-disappoints-users-with-nerfed-performance/) ⭐️ 8.0/10
+## [中国拟新规：半年不活跃账号可注销，AI 内容须标识](https://mp.weixin.qq.com/s/TfYZaC8ULPvu9JeTqYGkKg) ⭐️ 8.0/10
 
-这种开发者体验的倒退削弱了对 Anthropic 旗舰模型的信任，该模型广泛用于复杂编码任务。安全误判频繁让开发者感到沮丧，可能促使他们转向行为更一致的竞品模型。 据报道，模型的核心性能并未改变，问题在于安全过滤阈值过高。完整的 Fable 5 访问权限仍可通过 API 和按量付费的企业版获得，但官方尚未公布针对误判的修复方案。
+国家互联网信息办公室于 2026 年 7 月 3 日发布了《互联网信息服务管理办法（修订草案征求意见稿）》，提出平台可对超过 6 个月未使用的账号进行注销，要求对 AI 生成内容进行标识，并允许用户关闭个性化推荐。 该规定将深刻影响中国互联网平台的账号管理和内容管理方式，通过规范账号注销、AI 标识和个性化推荐开关，增强了用户权利，同时有助于打击 AI 生成内容带来的虚假信息问题。 草案还禁止控评、刷量、操纵热搜和制造虚假热点等行为；大型平台需在 24 小时内处理违法和不良信息投诉。公开征求意见截止日期为 2026 年 8 月 2 日。
 
-telegram · zaihuapd · 7月3日 07:20
+telegram · zaihuapd · 7月3日 11:29
 
-**背景**: Claude Fable 5 是 Anthropic 最强大的 Mythos 类模型，专为自主、长时间运行的代理任务设计，支持多达 100 万 token 的上下文。Opus 4.8 是早期的高能力模型，常被用作回退。降级问题源于安全护栏错误地将合法代码标记为不安全，从而损害了从事 C/C++、Rust、安全和系统级代码的开发者的用户体验。
+**背景**: 中国近年来不断加强互联网治理，例如《个人信息保护法》和《算法推荐管理规定》。本次草案在此基础上进一步细化，对 AI 内容标识和休眠账号管理作出规定。其他国家和地区也有类似的数据最小化和 AI 透明度要求。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://cursor.com/docs/models/claude-fable-5">Claude Fable 5 | Cursor Docs</a></li>
-<li><a href="https://runware.ai/docs/models/anthropic-claude-opus-4-8">Claude Opus 4 . 8 API | Runware Docs</a></li>
-<li><a href="https://free.ai/models/anthropic-claude-fable-5/">Anthropic: Claude Fable 5 - AI Chat | Free.ai</a></li>
+<li><a href="http://english.scio.gov.cn/pressroom/2025-03/17/content_117769570.html">China requires labeling of AI-generated online content</a></li>
+<li><a href="https://aisecurityandsafety.org/en/frameworks/china-ai-content-labeling-measures/">China AI Content Labeling Measures (China, 2026): What You ...</a></li>
+<li><a href="https://www.insideprivacy.com/international/china/china-releases-new-labeling-requirements-for-ai-generated-content/">China Releases New Labeling Requirements for AI-Generated ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Claude`, `#model performance`, `#security`, `#developer tools`
-
----
-
-<a id="item-9"></a>
-## [华为 Mate 80 Pro 游戏能效超越骁龙 8 Gen3](https://www.bilibili.com/video/BV1F7T46wEyT) ⭐️ 8.0/10
-
-极客湾对华为 Mate 80 Pro 系列的评测显示，麒麟 9030 芯片虽然理论性能较低，但凭借原生鸿蒙优化，在游戏能效上超越了骁龙 8 Gen3。例如，Mate 80 Pro Max 运行《原神》60 帧时整机功耗仅 4.9W。 这表明软件优化能使技术上较弱的芯片在实际能效上超越领先对手，挑战了纯硬件规格决定性能的观念，凸显了移动设备深度软硬协同的潜力。 麒麟 9030 Pro 采用 9 核 14 线程 CPU 和 6 核马良 935 GPU，晶体管规模约 150 亿。其 CPU 多核能效介于骁龙 8 Gen2 和 8 Gen3 之间，但由于鸿蒙优化，实际游戏功耗更低。
-
-telegram · zaihuapd · 7月3日 13:27
-
-**背景**: 麒麟 9030 是华为最新的自研移动芯片，用于 Mate 80 Pro 系列。鸿蒙是华为专有操作系统，旨在与硬件深度整合，通过优化降低功耗并提升原生应用性能。骁龙 8 Gen3 是高通旗舰移动平台，以高性能著称。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.notebookcheck.net/HiSilicon-Maleoon-935-Benchmarks-and-Specs.1249609.0.html">HiSilicon Maleoon 935 - Benchmarks and Specs - Notebookcheck Tech</a></li>
-<li><a href="https://x.com/TechHome100/status/1993138009198453215">Tech Home on X: "Huawei Mate 80 Pro Max spotted on Geekbench Kirin 9030 (9-core CPU) CPU : 1× 2.75GHz 4× 2.27GHz 4× 1.72GHz GPU : Maleoon 935 Single Core ~ 1100+ Multi Core ~ 4200+ #Huawei #HuaweiMate80 https://t.co/tu1wRpimWC" / X</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Huawei`, `#Kirin 9030`, `#HarmonyOS`, `#mobile chip`, `#energy efficiency`
+**标签**: `#regulation`, `#China`, `#internet governance`, `#AI`, `#privacy`
 
 ---
